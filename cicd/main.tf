@@ -33,8 +33,8 @@ module "jenkins_agent" {
 resource "aws_key_pair" "tools" {
   key_name   = "tools"
   # you can paste the public key directly like this
-  #public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCZPHIKX9MzOW2p7MwXv9p/ij1ZgTkniCG4cIRb7vK8DoJKZUpFtmnNBIG+7MoWZcYp6a5Ri6ViSQ7OYQ/m5NCleTIssE9D/eOOj+sWn6kvWWs6iotKFCmjIjssQJp6ZwQ4w4sCf7pCev7VR2m7AS1d6Xfl/UkjZcYuyQFA1YMNbpjp9vpG8uo+AJ9XwAHwGL01N8f4jEjACwox8idV7L7uDqniL9ntSXV0pC5mrsr/6UE8zPpQuOM+qM4TS5CjIt+0/oh69zPAuXAOOWKR7BAo0AEqidSVJbzB6QRthcB9QhmP9FQuwuL1qavJT4xlzLj0mRgEKRtqH0ZieG3B5rppjQZmmO8qKayR8IyZlaK4+DJBuTgeIM9mAYdB15N7kmS1S23uT5RnmsNmoqt0QvLMSbZ4Bm89Nsj0s8g3iFKWoUQ3pYgctNuSgs0nSdgOkLFzyZy4XWDIyRT3hCEBTPSEMy7+bRZI/GPWZ7EHZC0dfQ6+hmDjFdiFCTMiaOsFacs= param@Chinnu"
-  public_key = file("/c/Bhavya/tool.pub")
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCZPHIKX9MzOW2p7MwXv9p/ij1ZgTkniCG4cIRb7vK8DoJKZUpFtmnNBIG+7MoWZcYp6a5Ri6ViSQ7OYQ/m5NCleTIssE9D/eOOj+sWn6kvWWs6iotKFCmjIjssQJp6ZwQ4w4sCf7pCev7VR2m7AS1d6Xfl/UkjZcYuyQFA1YMNbpjp9vpG8uo+AJ9XwAHwGL01N8f4jEjACwox8idV7L7uDqniL9ntSXV0pC5mrsr/6UE8zPpQuOM+qM4TS5CjIt+0/oh69zPAuXAOOWKR7BAo0AEqidSVJbzB6QRthcB9QhmP9FQuwuL1qavJT4xlzLj0mRgEKRtqH0ZieG3B5rppjQZmmO8qKayR8IyZlaK4+DJBuTgeIM9mAYdB15N7kmS1S23uT5RnmsNmoqt0QvLMSbZ4Bm89Nsj0s8g3iFKWoUQ3pYgctNuSgs0nSdgOkLFzyZy4XWDIyRT3hCEBTPSEMy7+bRZI/GPWZ7EHZC0dfQ6+hmDjFdiFCTMiaOsFacs= param@Chinnu"
+  #public_key = file("/c/Bhavya/tool.pub")
   # ~ means windows home directory
 }
 

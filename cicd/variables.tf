@@ -4,7 +4,7 @@ variable "ami_id"{
 
 variable "sg"{
     type = list 
-    default = ["sg-014f3947b6035bd6d"]
+    default = ["sg-09f0d89a69936a6b5"]
 }
 
 variable "instance_type"{
