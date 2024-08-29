@@ -1,23 +1,14 @@
-
-data "aws_ami" "ami_info" {
-
+data "aws_ami" "ami_info"{
     most_recent = true
-    owners = ["973714476881"]
+    owners = ["973714476881"] #ami owneer id
 
+    #we can use as many filters as we want to fetch 
     filter {
-        name   = "name"
+        name = "name"
         values = ["RHEL-9-DevOps-Practice"]
+
     }
 
-    filter {
-        name   = "root-device-type"
-        values = ["ebs"]
-    }
-
-    filter {
-        name   = "virtualization-type"
-        values = ["hvm"]
-    }
 }
 
 # data "aws_ami" "nexus_ami_info" {
